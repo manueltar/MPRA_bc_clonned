@@ -105,6 +105,6 @@ echo -n "" > menial_P_vs_NP.out
 bsub -G team151 -o menial_P_vs_NP.out -M 4000 -R"select[model==Intel_Platinum]" -R"select[mem >4000] rusage[mem=4000] span[hosts=1]" -n1 -q normal "rclone copyto P_vs_NP/ mt19_g_drive:/Project_WetLab_Projects/V2F_paper/RESULTS/P_vs_NP --drive-shared-with-me"
 
 
-# To find the results associated to Open Targets diseases look in this file:
+# To find the results associated to Open Targets diseases look in this file. The release version of the OpenTargets database used was OpenTargets/20.11 (Nov 2020)
 
 /lustre/scratch126/humgen/teams/soranzo/users/ALL_dB/Allelic_Series_csv_tables_AS_DEFINITIVE/Open_Target_DISEASES.tsv
